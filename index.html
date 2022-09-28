@@ -19,55 +19,65 @@
 </head>
 
 <body>
-    <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1">EMAIL</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="email@email.com">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">SENHA</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
-        </div>
-        <a class="link" data-bs-toggle="modal" data-bs-target="#recuperarSenha">
-            ESQUECI MINHA SENHA
-        </a>
-        <div class="modal fade" id="recuperarSenha" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">RECUPERAR SENHA</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail2" class="form-label">DIGITE SEU EMAIL CADASTRADO</label>
-                            <input type="email" class="form-control" id="exampleInputEmail2"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text"></div>
+
+    <header>
+        <h1 class="logo">LOGO</h1>
+    </header>
+
+    <main>
+        <form class="formulario">
+            <div class="form-group">
+                <label for="exampleInputEmail1">EMAIL</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="email@email.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">SENHA</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">MANTER-SE CONECTADO</label>
+                </div>
+            </div>
+            <div class="div-entrar">
+                <a href="./home.html">
+                    <button type="button" class="btn-entrar">ENTRAR</button>
+                </a>
+
+                <a class="link-senha" data-bs-toggle="modal" data-bs-target="#recuperarSenha">
+                    ESQUECEU SUA SENHA?
+                </a>
+            </div>
+            <div class="modal fade" id="recuperarSenha" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">RECUPERAR SENHA</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">FECHAR</button>
-                        <button type="button" class="btn btn-primary">ENVIAR EMAIL</button>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail2" class="form-label">DIGITE SEU EMAIL CADASTRADO</label>
+                                <input type="email" class="form-control" id="exampleInputEmail2"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">FECHAR</button>
+                            <button type="button" class="btn btn-primary">ENVIAR EMAIL</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">MANTER-SE CONECTADO</label>
-        </div>
-        <a href="./home.html">
-            <button type="button" class="btn btn-primary">ENTRAR</button>
-        </a>
-        <div>
-            CADASTRE-SE <a class="link" href="./cadastro.html" class="cadastro-link"> AQUI</a>
-        </div>
+            <div>
+                CADASTRE-SE <a href="./cadastro.html" class="cadastro-link"> AQUI</a>
+            </div>
+        </form>
 
 
-    </form>
+    </main>
 
 
 </body>

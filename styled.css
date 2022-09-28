@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Orbitron:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Orbitron', sans-serif; */
+
+body {
+    background-image: url(./img/background.jpg);
+    background-size: 100%;
+    color: #968c70;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    color: #e1c781;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+/* body */
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    color: #968c70;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.form-control {
+    border: #543f26 1px solid;
+    background-color: transparent;
+    color: #303030;
+}
+
+.form-check-label {
+    font-size: 0.7rem;
+}
+
+.btn-entrar,
+.form-check-input {
+    background-color: #303030;
+    border: #e1c781 1px solid;
+    color: #968c70;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+}
+
+.btn-entrar {
+    padding: 15px;
+    box-shadow: rgba(252, 186, 3, 0.5) 2.4px 2.4px 3.2px;
+
+}
+
+.div-entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-senha {
+    text-decoration: none;
+    color: #e1c781;
+    font-size: 0.65rem;
+    margin-top: 0.5rem;
+}
+
+.link-senha {
+    text-decoration: none;
+
+}
+
+.cadastro-link {
+    text-decoration: none;
+    color: #e1c781;
+    
+}
+
+
+
+/* leo */
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carouselPrograms .carousel-inner .active,
+    .carouselPrograms .carousel-inner .active+.carousel-item,
+    .carouselPrograms .carousel-inner .active+.carousel-item+.carousel-item {
+        display: block;
+    }
+
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+        transition: none;
+    }
+
+    .carouselPrograms .carousel-inner .carousel-item-next,
+    .carouselPrograms .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carouselPrograms .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .carouselPrograms .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item,
+    .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .carouselPrograms .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item,
+    .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
