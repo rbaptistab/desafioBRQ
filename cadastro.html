@@ -16,18 +16,16 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styled.css">
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/img/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="header-cadastro">
-        <div class="cabecalho-cadastro">
             <a href="./index.html">
                 <i id="seta-esquerda" class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
             </a>
-            <h1 class="logo">LOGO</h1>
-        </div>
-
+            <h1 class="titulo">CADASTRO</h1>
+            <h1 class="nao-existe">T</h1>
     </header>
 
     <main>
@@ -56,16 +54,20 @@
                 <label for="formGroupSenhaConfirm">CONFIRMAR SENHA</label>
                 <input type="text" class="form-control" id="formGroupSenhaConfirm" placeholder="********">
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Li e aceito os Termos de Uso.</label>
+            <div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-cadastro" for="exampleCheck1">Li e aceito os <a class="link-termos" href="">Termos de Uso</a>.</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-cadastro" for="exampleCheck1">Aceito receber promoções e
+                        newsletter.</label>
+                </div>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Aceito receber promoções e newsletter.</label>
-            </div>
+
             <a href="./index.html">
-                <button type="button" class="btn btn-primary">CADASTRAR</button>
+                <button type="button" class="btn-cadastrar">CADASTRAR</button>
             </a>
         </form>
 

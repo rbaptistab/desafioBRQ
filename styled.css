@@ -5,9 +5,12 @@
 font-family: 'Orbitron', sans-serif; */
 
 body {
-    background-image: url(./img/background.jpg);
+    background-image: url(./img/background.png);
+    object-fit: cover;
     background-size: 100%;
     color: #968c70;
+    width: 100vw;
+    max-width: 100vw;
 }
 
 /* HEADER */
@@ -20,31 +23,28 @@ body {
 
 }
 
-.titulo {
+.titulo,
+.tituloLista {
     color: #e1c781;
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
     font-size: 2rem;
+    margin: 0.5rem;
 
 }
 
 /* HEADER CADASTRO */
-.header-cadastro{
+.header-cadastro {
     display: flex;
-    width: 100vw;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 2rem;
+    justify-content: space-between;
+    margin: 1rem;
 }
 
-.cabecalho-cadastro{
-    width: 65%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.nao-existe {
+    color: transparent;
 }
+
 #seta-esquerda {
-    /* margin-top: 2rem; */
     color: #e1c781;
 }
 
@@ -72,7 +72,9 @@ body {
 }
 
 .btn-entrar,
-.form-check-input, .btn-email {
+.form-check-input,
+.btn-email,
+.btn-cadastrar, .input-group-text {
     background-color: #303030;
     border: #e1c781 1px solid;
     color: #968c70;
@@ -80,13 +82,20 @@ body {
     border-radius: 5px;
 }
 
-.btn-entrar {
+.form-check-input:checked {
+    background-color: #968c70;
+    border: #e1c781 1px solid;
+    box-shadow: none;
+}
+
+.btn-entrar,
+.btn-cadastrar {
     padding: 15px;
     box-shadow: rgba(252, 186, 3, 0.5) 2.4px 2.4px 3.2px;
 
 }
 
-.btn-email{
+.btn-email {
     padding: 6px;
 }
 
@@ -97,38 +106,46 @@ body {
     align-items: center;
 }
 
+
+.cadastro-link,
+.link-termos,
 .link-senha {
     text-decoration: none;
     color: #e1c781;
+}
+
+a:visited {
+    color: #e1c781;
+}
+
+a:active {
+    color: #e1c781
+}
+
+a:hover {
+    color: white
+}
+
+.link-senha {
     font-size: 0.65rem;
     margin-top: 0.5rem;
 }
 
-.link-senha {
-    text-decoration: none;
-
-}
-
-
-.cadastro-link {
-    text-decoration: none;
-    color: #e1c781;
-    
-}
 
 .modal-content {
     background-image: url(./img/backgroundPreto.png);
     background-size: 100%;
     color: #968c70;
     margin-top: 8%;
-     
+
 }
 
 .modal {
     background-color: rgba(54, 52, 45, 0.4);
 }
 
-.formulario-cadastro{
+/* CADASTRO */
+.formulario-cadastro {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -138,68 +155,55 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+.form-check-cadastro {
+    color: white;
+    font-size: 10px;
+}
 
 
-/* leo */
-@media (min-width: 768px) {
+/* LISTA DE COMPRAS */
 
-    /* show 3 items */
-    .carouselPrograms .carousel-inner .active,
-    .carouselPrograms .carousel-inner .active+.carousel-item,
-    .carouselPrograms .carousel-inner .active+.carousel-item+.carousel-item {
-        display: block;
-    }
+.tituloLista {
+    font-size: 1.5rem;
+}
 
-    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
-        transition: none;
-    }
+.titulos-lista {
+    color:#e1c781;
+    
+    /* border-bottom: 1px white solid; */
+    font-family: 'Orbitron', sans-serif;
+}
 
-    .carouselPrograms .carousel-inner .carousel-item-next,
-    .carouselPrograms .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
 
-    .carouselPrograms .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.333%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
+.table>tbody>tr:nth-child(odd)>td, 
+.table>tbody>tr:nth-child(odd)>th {
+   background-color: rgba(123, 120, 120, 0.198);
+}
 
-    /* left or forward direction */
-    .carouselPrograms .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item,
-    .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-    .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
+/* Dispositivos */
+.thumbnail a {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff861d;
+}
 
-    /* farthest right hidden item must be abso position for animations */
-    .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
+.dispositivo a {
+    border: 3px solid #ff861d;
+    border-radius: 5%;
+}
 
-    /* right or prev direction */
-    .carouselPrograms .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item,
-    .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-    .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
+.dispositivo i {
+    color: #ff861d;
+    float: left;
+    font-size: x-large;
+}
+
+.dispositivo span {
+    float: right;
+    font-size: x-large;
+    color: white;
+}
+
+.dispositivo h7 {
+    color: #ff861d;
+    font-family: 'Orbitron', sans-serif;
 }
