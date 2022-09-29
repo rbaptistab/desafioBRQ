@@ -12,18 +12,40 @@ body {
 
 /* HEADER */
 
-header {
+.header-login {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 2rem;
+
 }
 
-.logo {
+.titulo {
     color: #e1c781;
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
     font-size: 2rem;
+
+}
+
+/* HEADER CADASTRO */
+.header-cadastro{
+    display: flex;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
     margin-top: 2rem;
+}
+
+.cabecalho-cadastro{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#seta-esquerda {
+    /* margin-top: 2rem; */
+    color: #e1c781;
 }
 
 /* body */
@@ -50,7 +72,7 @@ header {
 }
 
 .btn-entrar,
-.form-check-input {
+.form-check-input, .btn-email {
     background-color: #303030;
     border: #e1c781 1px solid;
     color: #968c70;
@@ -63,6 +85,11 @@ header {
     box-shadow: rgba(252, 186, 3, 0.5) 2.4px 2.4px 3.2px;
 
 }
+
+.btn-email{
+    padding: 6px;
+}
+
 
 .div-entrar {
     display: flex;
@@ -82,10 +109,33 @@ header {
 
 }
 
+
 .cadastro-link {
     text-decoration: none;
     color: #e1c781;
     
+}
+
+.modal-content {
+    background-image: url(./img/backgroundPreto.png);
+    background-size: 100%;
+    color: #968c70;
+    margin-top: 8%;
+     
+}
+
+.modal {
+    background-color: rgba(54, 52, 45, 0.4);
+}
+
+.formulario-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    color: #968c70;
+    font-family: 'Orbitron', sans-serif;
 }
 
 
