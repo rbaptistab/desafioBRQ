@@ -16,8 +16,10 @@
 		<link rel="stylesheet" href="styled.css">
   </head>
   <body>
-		<header>
-			<h3 class="titulo">Dispositivos</h3>
+		<header class="header-home">
+			<a href="./index.html" class="float-left"><i id="seta-esquerda" class="bi bi-chevron-double-left" aria-hidden="true"></i></a>
+            <h7 class="titulo">Dispositivos</h7>
+            <h1 class="nao-existe">T</h1>
 		</header>
 		<main>
 			<div class="carouselPropriedade">
@@ -27,9 +29,9 @@
 						<div class="col-md-12">
 						<div class="slider-hero">
 							<ul class="thumbnail">
-								<li class="active img"><a href="#"><img src="img/casa.png" alt="Image" class="img-fluid"></a></li>
-								<li><a href="#"><img src="img/casa.png" alt="Image" class="img-fluid"></a></li>
-								<li><a href="#"><img src="img/casa.png" alt="Image" class="img-fluid"></a></li>
+								<li class="active img"><a href="#"><img src="img/casa.png" alt="Image" class="img-fluid"><br>Casa 1</a></li>
+								<li><a href="#"><img src="img/casa.png" alt="Image" class="img-fluid"><br>Casa 2</a></li>
+								<li><a href="#"><img src="img/casa.png" alt="Image" class="img-fluid"><br>Casa 3</a></li>
 							</ul>
 							
 							<div class="featured-carousel owl-carousel">
@@ -39,25 +41,44 @@
 											<div class="text text-center">
 												<div class="container">
 													<div class="row">
-													  <div class="col">
-															<i class="bi bi-1-circle"></i> de <i class="bi bi-2-circle"></i>
-															<img src="img/MonitoramenteCasa1.png" style="">
+														<div class="dispositivo col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-camera-video"></i><br>
+																<span class="badge bg-danger ms-2">6/8</span><br>
+																<h7 class="text-white">Monitoramento</h7>
+															</a>
 														</div>
-														<div class="col">
-															<i class="bi bi-2-circle"></i> de <i class="bi bi-2-circle"></i>
+														<div class="dispositivo col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-bell"></i><br>
+																<span class="badge bg-success ms-2">2/2</span><br>
+																<h7 class="text-white">Alarmes</h7>
+															</a>
 														</div>
-												</div>
-												<div class="row">
-													<div class="col">
-														<i class="bi bi-1-circle"></i> de <i class="bi bi-3-circle"></i>
 													</div>
-													<div class="col">
-														<i class="bi bi-2-circle"></i> de <i class="bi bi-3-circle"></i>
-													</div>
-													<div class="col">
-														<i class="bi bi-3-circle"></i> de <i class="bi bi-3-circle"></i>
-													  </div>
-													</div>
+													<br>
+													<div class="row">
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-plug"></i><br>
+																<span class="badge bg-success ms-2">7/7</span><br>
+																<h7 class="text-white">Elétricos</h7>
+															</a>
+														</div>
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-lock"></i><br>
+																<span class="badge bg-success ms-2">2/2</span><br>
+																<h7 class="text-white">Trancas</h7>
+															</a>
+														</div>
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-bag"></i><br>
+																<h7 class="text-white">Lista de compras</h7>
+															</a>
+														  </div>
+														</div>
 												  </div>
 											</div>
 										</div>
@@ -67,7 +88,47 @@
 									<div class="work">
 										<div class="img d-flex align-items-center justify-content-center">
 											<div class="text text-center">
-												<h2>Dispositivo 2</h2>
+												<div class="container">
+													<div class="row">
+														<div class="dispositivo col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-camera-video"></i><br>
+																<span class="badge bg-success ms-2">7/7</span><br>
+																<h7 class="text-white">Monitoramento</h7>
+															</a>
+														</div>
+														<div class="dispositivo col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-bell"></i><br>
+																<span class="badge bg-success ms-2">2/2</span><br>
+																<h7 class="text-white">Alarmes</h7>
+															</a>
+														</div>
+													</div>
+													<br>
+													<div class="row">
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-plug"></i><br>
+																<span class="badge bg-success ms-2">12/12</span><br>
+																<h7 class="text-white">Elétricos</h7>
+															</a>
+														</div>
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-lock"></i><br>
+																<span class="badge bg-success ms-2">3/3</span><br>
+																<h7 class="text-white">Trancas</h7>
+															</a>
+														</div>
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-bag"></i><br>
+																<h7 class="text-white">Lista de compras</h7>
+															</a>
+														  </div>
+														</div>
+												  </div>
 											</div>
 										</div>
 									</div>
@@ -76,7 +137,47 @@
 									<div class="work">
 										<div class="img d-flex align-items-center justify-content-center">
 											<div class="text text-center">
-												<h2>Dispositivo 3</h2>
+												<div class="container">
+													<div class="row">
+														<div class="dispositivo col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-camera-video"></i><br>
+																<span class="badge bg-danger ms-2">0/7</span><br>
+																<h7 class="text-white">Monitoramento</h7>
+															</a>
+														</div>
+														<div class="dispositivo col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-bell"></i><br>
+																<span class="badge bg-danger ms-2">0/2</span><br>
+																<h7 class="text-white">Alarmes</h7>
+															</a>
+														</div>
+													</div>
+													<br>
+													<div class="row">
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-plug"></i><br>
+																<span class="badge bg-danger ms-2">0/12</span><br>
+																<h7 class="text-white">Elétricos</h7>
+															</a>
+														</div>
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-lock"></i><br>
+																<span class="badge bg-danger ms-2">0/3</span><br>
+																<h7 class="text-white">Trancas</h7>
+															</a>
+														</div>
+														<div class="dispositivo  col">
+															<a class="btn" href="#!" role="button">
+																<i class="bi bi-bag"></i><br>
+																<h7 class="text-white">Lista de compras</h7>
+															</a>
+														  </div>
+														</div>
+												  </div>
 											</div>
 										</div>
 									</div>
