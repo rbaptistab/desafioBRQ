@@ -74,7 +74,8 @@ body {
 .btn-entrar,
 .form-check-input,
 .btn-email,
-.btn-cadastrar, .input-group-text {
+.btn-cadastrar,
+.input-group-text {
     background-color: #303030;
     border: #e1c781 1px solid;
     color: #968c70;
@@ -133,7 +134,7 @@ a:hover {
 
 
 .modal-content {
-    background-image: url(./img/backgroundPreto.png);
+    background-image: url(./img/background.png);
     background-size: 100%;
     color: #968c70;
     margin-top: 8%;
@@ -168,31 +169,54 @@ a:hover {
 }
 
 .titulos-lista {
-    color:#e1c781;
-    
+    color: #e1c781;
+
     /* border-bottom: 1px white solid; */
     font-family: 'Orbitron', sans-serif;
 }
 
-
-.table>tbody>tr:nth-child(odd)>td, 
+.table>tbody>tr:nth-child(odd)>td,
 .table>tbody>tr:nth-child(odd)>th {
-   background-color: rgba(123, 120, 120, 0.198);
+    background-color: rgba(123, 120, 120, 0.198);
+}
+
+.lista-compras{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+/* HOME */
+
+.header-home{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+.menu, .logout{
+    width: 1.7rem;
+}
+
+.logout{
+    margin-right: 1rem;
 }
 
 /* Dispositivos */
 .thumbnail a {
     font-family: 'Orbitron', sans-serif;
-    color: #ff861d;
+    color: #e1c781
 }
 
 .dispositivo a {
-    border: 3px solid #ff861d;
+    border: 1px solid #848384;
     border-radius: 5%;
 }
 
 .dispositivo i {
-    color: #ff861d;
+    color: #848384;;
     float: left;
     font-size: x-large;
 }
@@ -204,6 +228,14 @@ a:hover {
 }
 
 .dispositivo h7 {
-    color: #ff861d;
+    color: #e1c781;
     font-family: 'Orbitron', sans-serif;
+}
+
+.text-white{
+    font-size: 0.7rem;
+}
+
+.dispositivo{
+    margin-bottom: 1rem;
 }
