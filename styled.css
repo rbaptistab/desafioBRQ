@@ -180,7 +180,7 @@ a:hover {
     background-color: rgba(123, 120, 120, 0.198);
 }
 
-.lista-compras{
+.lista-compras {
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -189,18 +189,19 @@ a:hover {
 
 /* HOME */
 
-.header-home{
+.header-home {
     display: flex;
     justify-content: space-between;
     margin: 0.5rem;
     margin-top: 1rem;
 }
 
-.menu, .logout{
+.menu,
+.logout {
     width: 1.7rem;
 }
 
-.logout{
+.logout {
     margin-right: 1rem;
 }
 
@@ -216,7 +217,8 @@ a:hover {
 }
 
 .dispositivo i {
-    color: #848384;;
+    color: #848384;
+    ;
     float: left;
     font-size: x-large;
 }
@@ -232,10 +234,31 @@ a:hover {
     font-family: 'Orbitron', sans-serif;
 }
 
-.text-white{
+.text-white {
     font-size: 0.7rem;
 }
 
-.dispositivo{
+.dispositivo {
     margin-bottom: 1rem;
+}
+
+@media (min-width: 575.98px) {
+    body{
+        font-size: 3rem;
+    }
+
+    .titulo,
+    .tituloLista, .form-group {
+        font-size: 3rem;
+    }
+
+    .form-group{
+        width: 80%;
+    }
+
+    .link-senha, .form-check-label, .form-control, .form-check-cadastro{
+        font-size: 1.5rem;
+    }
+
+    
 }
