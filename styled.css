@@ -75,7 +75,7 @@ body {
 .form-check-input,
 .btn-email,
 .btn-cadastrar,
-.input-group-text {
+.input-group-text, .btn-dispositivos  {
     background-color: #303030;
     border: #e1c781 1px solid;
     color: #968c70;
@@ -90,7 +90,7 @@ body {
 }
 
 .btn-entrar,
-.btn-cadastrar {
+.btn-cadastrar{
     padding: 15px;
     box-shadow: rgba(252, 186, 3, 0.5) 2.4px 2.4px 3.2px;
 
@@ -241,6 +241,22 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+.btn-dispositivos{
+    padding: 5px;
+    font-size: 15px;
+  
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.body-home{
+    height: 100vh;
+}
+
 /* MONITORAMENTO */
 
 .monitoramento {
@@ -274,5 +290,5 @@ a:hover {
     .link-senha, .form-check-label, .form-control, .form-check-cadastro{
         font-size: 1.5rem;
     }
-
+    
 }
