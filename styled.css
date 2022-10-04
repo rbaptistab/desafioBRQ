@@ -110,7 +110,7 @@ body {
 
 .cadastro-link,
 .link-termos,
-.link-senha {
+.link-senha, .titulos-lista {
     text-decoration: none;
     color: #e1c781;
 }
@@ -146,12 +146,11 @@ a:hover {
 }
 
 /* CADASTRO */
-.formulario-cadastro {
+.formulario-cadastro, .formulario-dispositivo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
     color: #968c70;
     font-family: 'Orbitron', sans-serif;
 }
@@ -242,6 +241,22 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+/* MONITORAMENTO */
+
+.monitoramento {
+    padding: 2rem;
+}
+
+
+.formulario-dispositivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+
+}
+
+
 @media (min-width: 575.98px) {
     body{
         font-size: 3rem;
@@ -260,5 +275,4 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    
 }
