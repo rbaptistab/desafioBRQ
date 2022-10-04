@@ -8233,8 +8233,8 @@ h1, h2, h3, h4, h5,
 .work {
   width: 100%; }
   .work .img {
-    width: 100%;
-    height: 600px;
+    width: 100vw;
+    height: 400px;
     position: relative;
     z-index: 0;
     border-radius: 10px;
