@@ -217,7 +217,6 @@ a:hover {
 
 .dispositivo i {
     color: #848384;
-    ;
     float: left;
     font-size: x-large;
 }
@@ -275,12 +274,16 @@ a:hover {
 
 @media (min-width: 575.98px) {
     body{
-        font-size: 3rem;
+        font-size: 1rem;
     }
 
-    .titulo,
+    
+    .titulo{
+        font-size: 2;
+    }
+
     .tituloLista, .form-group {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
 
     .form-group{
@@ -288,7 +291,8 @@ a:hover {
     }
 
     .link-senha, .form-check-label, .form-control, .form-check-cadastro{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-    
+
+   
 }
